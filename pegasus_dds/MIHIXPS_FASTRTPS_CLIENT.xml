@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<profiles xmlns="http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles">
+<participant profile_name="mihixps_client_discovery"  is_default_profile="true">
+  <rtps>
+    <builtin>
+        <discovery_config>
+          <discoveryProtocol>SUPER_CLIENT</discoveryProtocol>
+          <!-- alternatives
+          <discoveryProtocol>SERVER</discoveryProtocol>
+          <discoveryProtocol>BACKUP</discoveryProtocol>
+          -->
+          <discoveryServersList>
+            <RemoteServer prefix="44.53.00.5f.45.50.52.4f.53.49.4d.41">
+                  <metatrafficUnicastLocatorList>
+                        <locator>
+                                <udpv4>
+                                        <!-- placeholder server UDP address -->
+                                        <address>129.105.69.168</address>
+                                        <port>11811</port>
+                                </udpv4>
+                        </locator>
+                        <locator>
+                            <tcpv4>
+                                <!-- Placeholder for server address -->
+                                <address>129.105.69.168</address>
+                                <!-- This is a logical port, the physical one was specified as listening port -->
+                                <port>11811</port>
+                            </tcpv4>
+                        </locator>
+                  </metatrafficUnicastLocatorList>
+            </RemoteServer>
+          </discoveryServersList>
+          <!-- <clientAnnouncementPeriod>
+            <nanosec>250000000</nanosec>
+          </clientAnnouncementPeriod> -->
+        </discovery_config>
+    </builtin>
+  </rtps>
+</participant>
+</profiles>
+
