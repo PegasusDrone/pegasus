@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<profiles xmlns="http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles">
+<participant profile_name="mihixps_decentralized_peer" is_default_profile="true">
+    <rtps>
+        <builtin>
+            <initialPeersList>
+                <locator>
+                    <udpv4>
+                        <!-- Pegasus Xavier NX -->
+                        <address>10.105.236.122</address>
+                        <port>11911</port>
+                    </udpv4>
+                </locator>
+            </initialPeersList>
+        </builtin>
+    </rtps>
+</participant>
+</profiles>
