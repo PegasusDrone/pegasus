@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <profiles xmlns="http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles">
-    <participant profile_name="beast_server_discovery" is_default_profile="true">
+    <participant profile_name="mihixps_backup_server_discovery" is_default_profile="true">
         <rtps>
             <prefix>
             44.53.00.5f.45.50.52.4f.53.49.4d.41
             </prefix>
             <builtin>
                 <discovery_config>
-                    <discoveryProtocol>SERVER</discoveryProtocol>
+                    <discoveryProtocol>BACKUP</discoveryProtocol>
                     <!-- alternatives
                     <discoveryProtocol>SERVER</discoveryProtocol>
                     <discoveryProtocol>BACKUP</discoveryProtocol>
@@ -21,7 +21,7 @@
                         <udpv4>
                             <!-- placeholder server UDP address -->
                             <address>0.0.0.0</address>
-                            <port>11811</port>
+                            <port>11911</port>
                         </udpv4>
                     </locator>
                 </metatrafficUnicastLocatorList>
